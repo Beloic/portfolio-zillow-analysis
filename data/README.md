@@ -1,36 +1,43 @@
-# 📊 Données Zillow Home Value Index
+# 📊 Zillow Home Value Index Dataset
 
-## Dataset complet
+## Complete Dataset
 
-Le dataset complet `Zillow_Home_Value_Index.csv` est trop volumineux pour GitHub (>100MB).
+The full `Zillow_Home_Value_Index.csv` dataset is too large for GitHub (>100MB).
 
-### Comment obtenir le dataset complet :
+### How to obtain the complete dataset:
 
-1. **Téléchargement direct** : Visitez [Zillow Research](https://www.zillow.com/research/) et téléchargez le Zillow Home Value Index
-2. **Alternative** : Utilisez l'échantillon fourni `Zillow_Home_Value_Index_sample.csv` pour tester les analyses
+1. **Direct Download**: Visit [Zillow Research](https://www.zillow.com/research/) and download the Zillow Home Value Index
+2. **Alternative**: Use the provided sample `Zillow_Home_Value_Index_sample.csv` for testing analyses
 
-## Échantillon fourni
+## Provided Sample
 
-- **Fichier** : `Zillow_Home_Value_Index_sample.csv`
-- **Taille** : ~1000 régions (échantillon représentatif)
-- **Période** : 2000-2025 (données mensuelles)
-- **Usage** : Parfait pour les démonstrations et tests
+- **File**: `Zillow_Home_Value_Index_sample.csv`
+- **Size**: ~1000 regions (representative sample)
+- **Period**: 2000-2025 (monthly data)
+- **Usage**: Perfect for demonstrations and testing
 
-## Structure des données
+## Data Structure
 
-| Colonne | Description |
-|---------|-------------|
-| RegionID | Identifiant unique de la région |
-| SizeRank | Rang de taille de la région |
-| RegionName | Nom de la région |
+| Column | Description |
+|--------|-------------|
+| RegionID | Unique region identifier |
+| SizeRank | Region size ranking |
+| RegionName | Region name |
 | RegionType | Type (zip, city, county, state) |
-| StateName | Nom de l'état |
-| State | Code de l'état |
-| City | Ville |
-| Metro | Zone métropolitaine |
-| CountyName | Nom du comté |
-| [Dates] | Prix moyens par mois (2000-01-31 à 2025-01-31) |
+| StateName | State name |
+| State | State code |
+| City | City name |
+| Metro | Metropolitan area |
+| CountyName | County name |
+| [Dates] | Average prices by month (2000-01-31 to 2025-01-31) |
 
-## Note importante
+## Data Quality Notes
 
-Pour les analyses complètes, utilisez le dataset complet téléchargé depuis Zillow Research.
+- **Missing Values**: Some regions may have missing data for certain time periods
+- **Data Types**: Price columns are numeric, geographic columns are categorical
+- **Time Series**: Monthly data points spanning 25+ years
+- **Geographic Coverage**: All US states and major metropolitan areas
+
+## Important Note
+
+For complete analyses, use the full dataset downloaded from Zillow Research. The sample provided is sufficient for portfolio demonstration and model development.
